@@ -16,5 +16,13 @@ func ask(number int, question string) int{
 	fmt.Printf("[質問%d] 次の単語を入力してください: %s\n", number, question)
 	fmt.Scan(&input)
 	fmt.Printf("%sと入力されました\n", input)
-	return 10
+
+	// 正解、不正解の判定をスコアに反映
+	if question == input {
+        fmt.Println("正解!")
+        return 10
+	} else {
+        fmt.Println("不正解!")
+        return 0
+	}
 }
