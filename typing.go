@@ -5,6 +5,8 @@ import "fmt"
 func main() {
 	// totalScoreにaskの戻り値を代入
 	totalScore := ask(1, "hoge")
+	totalScore += ask(2, "hogehoge")
+	totalScore += ask(3, "hogehoge")
 	fmt.Println("スコア", totalScore)
 }
 
