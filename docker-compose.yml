@@ -3,5 +3,7 @@ services:
     app:
         build: .
         tty: true
+        ports:
+            - "8080:3000"
         volumes:
             - ./app:/go/src/app
